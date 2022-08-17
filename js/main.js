@@ -13,5 +13,5 @@ function displayCategories(){
 //Dropdown event
 
 $('#pieCategories').on('show.bs.dropdown', function(){
-    //alert('It is alive')
+    //alert('It is alive')s
 })
