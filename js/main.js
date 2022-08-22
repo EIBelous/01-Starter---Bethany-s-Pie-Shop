@@ -4,6 +4,10 @@ $(document).ready(function(){
         "offset":-100,
         "flip":false
     })
+
+
+    //data tooltip
+    $('[data-toggle=tooltip]').tooltip()
 })
 //DropDown methods
 function displayCategories(){
