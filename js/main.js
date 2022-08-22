@@ -7,7 +7,15 @@ $(document).ready(function(){
 
 
     //data tooltip
-    $('[data-toggle=tooltip]').tooltip()
+    $('[data-toggle=tooltip]').tooltip({
+        delay: {show:1000, hide:1000},
+        html: true,
+        placement:'bottom',
+        animation: false,
+        title:'click to learn more',
+        offset:100
+    }
+    )
 })
 //DropDown methods
 function displayCategories(){
