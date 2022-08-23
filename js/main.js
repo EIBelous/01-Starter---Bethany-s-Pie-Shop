@@ -16,6 +16,13 @@ $(document).ready(function(){
         offset:100
     }
     )
+    //Pup over
+    $('[data-toggle="pupover"]').popover({
+        placement:'top',
+        trigger:'hover',
+        html:true
+    }
+    )
 })
 //DropDown methods
 function displayCategories(){
