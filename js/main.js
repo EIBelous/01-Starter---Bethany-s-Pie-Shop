@@ -20,7 +20,10 @@ $(document).ready(function(){
     $('[data-toggle="pupover"]').popover({
         placement:'top',
         trigger:'hover',
-        html:true
+        html:true,
+        
+
+
     }
     )
 })
@@ -30,6 +33,19 @@ function displayCategories(){
     
 }
 //Dropdown event
+
+$('#pieCategories').on('show.bs.dropdown', function(){
+    //alert('It is alive')s
+})
+//Overs ToolTips
+function viewPopOvers(){
+$('#pop1').popover('toggle')
+
+}
+
+function showTooltips(){
+    $('[data-toggle=tooltip]').tooltip('toggle')
+}
 
 $('#pieCategories').on('show.bs.dropdown', function(){
     //alert('It is alive')s
