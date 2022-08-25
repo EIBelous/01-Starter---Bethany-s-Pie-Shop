@@ -1,3 +1,5 @@
+let tooltipButton=document.getElementById('tooltipButton')
+let popButton=document.getElementById('popButton')
 $(document).ready(function(){
 
     $('.dropdown-toggle').dropdown({
@@ -40,6 +42,13 @@ $('#pieCategories').on('show.bs.dropdown', function(){
 //Overs ToolTips
 function viewPopOvers(){
 $('#pop1').popover('toggle')
+if(popButton.innerHTML=="View popovers"){
+    popButton.innerHTML="Hide popovers"  
+} else{
+    popButton.innerHTML="View popovers"
+}
+
+
 
 }
 
@@ -47,6 +56,11 @@ function showTooltips(){
     $('[data-toggle=tooltip]').tooltip('toggle')
 }
 
-$('#pieCategories').on('show.bs.dropdown', function(){
-    //alert('It is alive')s
+$('[data-toggle="tooltip"]').on('show.bs.tooltip', function(){
+    tooltipButton.innerHTML=' tooltips'
 })
+
+$('[data-toggle="tooltip"]').on('hide.bs.tooltip', function(){
+    tooltipButton.innerHTML='Show tooltips'
+})
+
