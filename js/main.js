@@ -24,10 +24,18 @@ $(document).ready(function(){
         trigger:'hover',
         html:true,
         
+    })
+    
 
+ 
+    //toast
+    $('.toast').toast({
+        delay:2000,
 
-    }
-    )
+    })
+    
+    
+
 })
 //DropDown methods
 function displayCategories(){
@@ -64,3 +72,10 @@ $('[data-toggle="tooltip"]').on('hide.bs.tooltip', function(){
     tooltipButton.innerHTML='Show tooltips'
 })
 
+let selesMessage=setInterval(toastNotify, 1000)
+
+function toastNotify(){
+    $('.toast').toast('show')
+
+    clearInterval(selesMessage)
+}
