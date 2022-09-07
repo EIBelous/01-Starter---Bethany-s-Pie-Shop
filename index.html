@@ -118,7 +118,7 @@
                 <div class="collapse" id="history">    
                     <p class="text-muted">In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building. After receiving many requests, it became clear that our next step was making it possible to order pies from the comfort of your own home and from anywhere in the world. You are now looking at the result of this: our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like it!"</p>
                 </div>   
-                    <a href="#history" data-toggle="collapse">Show More</a>
+                    <a href="#history" data-toggle="collapse" id="ShowMore">Show More</a>
                 </div>
         </div>
         <div class="d-flex flex-column mx-5">
@@ -132,7 +132,7 @@
                             type="button" data-toggle="collapse" data-target='#collapseOne'>Step 1</button>
                         </h2>
                     </div>
-                    <div id="collapseOne" class="collapse show"  data-parent="#mainReceipe">
+                    <div id="collapseOne" class="collapse show"  >
                         <div class="card-body">
                             20 лет спустя после эпической битвы, в которой супергерой Самаритянин уничтожил суперзлодея и пропал без вести.
                              Через два десятилетия парнишка с окраины знакомится со стариком, живущим в доме напротив. Вскоре мальчик осознает, что пожилой мужчина - тот самый пропавший супергерой, 
@@ -149,7 +149,7 @@
                             type="button" data-toggle="collapse" data-target='#collapseTwo'>Step 2</button>
                         </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse hide"  data-parent="#mainReceipe">
+                    <div id="collapseTwo" class="collapse"  >
                         <div class="card-body">
                             20 лет спустя после эпической битвы, в которой супергерой Самаритянин уничтожил суперзлодея и пропал без вести.
                              Через два десятилетия парнишка с окраины знакомится со стариком, живущим в доме напротив. Вскоре мальчик осознает, что пожилой мужчина - тот самый пропавший супергерой, 
@@ -165,7 +165,7 @@
                             type="button" data-toggle="collapse" data-target='#collapse3'>Step 3</button>
                         </h2>
                     </div>
-                    <div id="collapse3" class="collapse hide"  data-parent="#mainReceipe">
+                    <div id="collapse3" class="collapse"  >
                         <div class="card-body">
                             20 лет спустя после эпической битвы, в которой супергерой Самаритянин уничтожил суперзлодея и пропал без вести.
                              Через два десятилетия парнишка с окраины знакомится со стариком, живущим в доме напротив. Вскоре мальчик осознает, что пожилой мужчина - тот самый пропавший супергерой, 
@@ -173,7 +173,10 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
+            <button class="btn btn-primary my-4" type="button" onclick="expandAll()">Expand All</button>
+                <button class="btn btn-primary my-4" type="button" onclick="closeAll()">Close All</button>
         </div>
         <!-- Footer -->
         <footer class="d-flex flex-column my-2 pb-3 footer align-items-center text-muted">
