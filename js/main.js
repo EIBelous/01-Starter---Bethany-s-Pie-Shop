@@ -1,5 +1,6 @@
 let tooltipButton=document.getElementById('tooltipButton')
 let popButton=document.getElementById('popButton')
+let showMore=document.getElementById('ShowMore')
 $(document).ready(function(){
 
     $('.dropdown-toggle').dropdown({
@@ -34,6 +35,10 @@ $(document).ready(function(){
 
     })
     
+    //Collapse
+    $('.collapse').collapse({
+        toggle: false
+    })
     
 
 })
@@ -79,3 +84,25 @@ function toastNotify(){
 
     clearInterval(selesMessage)
 }
+//Collapse
+
+function expandAll(){
+$('#collapseOne, #collapseTwo, #collapse3').collapse('show')
+
+
+
+
+}
+
+function closeAll(){
+    $('#collapseOne, #collapseTwo, #collapse3').collapse('hide')
+
+}
+$('#history').on('shown.bs.collapse', function(){
+    showMore.innerHTML="Show less"
+
+})
+
+$('#history').on('hidden.bs.collapse', function(){
+    showMore.innerHTML="Show more "
+})
