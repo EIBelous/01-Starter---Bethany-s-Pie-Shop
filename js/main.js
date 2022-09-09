@@ -91,18 +91,18 @@ $('#collapseOne, #collapseTwo, #collapse3').collapse('show')
 
 
 
-
+//
 }
 
 function closeAll(){
     $('#collapseOne, #collapseTwo, #collapse3').collapse('hide')
 
 }
-$('#history').on('shown.bs.collapse', function(){
+$('#history').on('show.bs.collapse', function(){
     showMore.innerHTML="Show less"
 
 })
 
-$('#history').on('hidden.bs.collapse', function(){
+$('#history').on('hide.bs.collapse', function(){
     showMore.innerHTML="Show more "
 })
