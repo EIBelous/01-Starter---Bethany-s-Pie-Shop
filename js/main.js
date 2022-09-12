@@ -40,7 +40,11 @@ $(document).ready(function(){
         toggle: false
     })
     
-
+    //carousel
+    $('.carousel').carousel({
+        interval: 2000,
+        pause:false
+    })
 })
 //DropDown methods
 function displayCategories(){
