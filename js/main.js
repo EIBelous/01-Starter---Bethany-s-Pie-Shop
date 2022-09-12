@@ -110,3 +110,15 @@ $('#history').on('show.bs.collapse', function(){
 $('#history').on('hide.bs.collapse', function(){
     showMore.innerHTML="Show more "
 })
+function goToThumbnails(e){
+    $('.carousel').carousel(e)
+}
+function orderSlide(){
+    $('carousel').carousel(e)
+}
+$('.carousel').on('slid.bs.carousel', function(e){
+    let currentSlide=$(this).find('.active').index();
+    console.log(currentSlide)
+   
+
+})

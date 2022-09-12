@@ -86,6 +86,7 @@ h4{
     font-style: italic;
 }
 
+
 .thumb{
     width: auto;
     height: 100px;
@@ -100,6 +101,11 @@ video {
     height: auto !important;
 }
 
+.thumbnail{
+    width: auto;
+    height: 100px;
+    cursor:pointer;
+}
 /* Responsive */
 /* Extra small devices (phones, less than 768px) */
 
