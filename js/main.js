@@ -45,6 +45,9 @@ $(document).ready(function(){
         interval: 2000,
         pause:false
     })
+    $('.modal').modal({
+        backdrop:'static'
+    })
 })
 //DropDown methods
 function displayCategories(){
