@@ -110,6 +110,11 @@ video {
 .mainreceipe{
     height: 600px;
     overflow: scroll;
+
+    
+}
+.modal-content{
+    border-radius: 0;
 }
 /* Responsive */
 /* Extra small devices (phones, less than 768px) */

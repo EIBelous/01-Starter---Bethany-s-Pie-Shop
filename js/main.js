@@ -120,5 +120,12 @@ $('.carousel').on('slid.bs.carousel', function(e){
     let currentSlide=$(this).find('.active').index();
     console.log(currentSlide)
    
-
+})
+//scrollSpy
+$('[data-spy="scroll"]').on('activate.bs.scrollspy' , function (e, obj){
+   
+   console.log(obj)
+    if (obj.relatedTarget == "#section2"){
+        alert('section2')
+    }
 })
