@@ -1,6 +1,7 @@
 let tooltipButton=document.getElementById('tooltipButton')
 let popButton=document.getElementById('popButton')
 let showMore=document.getElementById('ShowMore')
+let video1=document.getElementById('video1')
 $(document).ready(function(){
 
     $('.dropdown-toggle').dropdown({
@@ -132,3 +133,10 @@ $('[data-spy="scroll"]').on('activate.bs.scrollspy' , function (e, obj){
         alert('section2')
     }
 })
+video1.onpause = function(){
+    $('#about1').modal('toggle')
+}
+function resumeVideo(){
+    $('#about1').modal('toggle')
+    video1.play()
+}

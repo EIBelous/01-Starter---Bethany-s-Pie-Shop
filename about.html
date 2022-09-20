@@ -36,7 +36,30 @@
                 </ul>
             </div>
         </nav>   
+        <div class="modal" tabindex="-1" id="about1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
 
+                    <div class="modal-header">
+                        <h5 class="modal-titile">About video</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p>  Marshmallow dragée marshmallow powder chocolate cake cupcake sugar plum fruitcake tootsie roll. Chocolate bar tiramisu lemon drops dessert macaroon cupcake pie gummies. Jelly-o lollipop sugar plum oat cake shortbread bear claw muffin dessert danish. Apple pie candy biscuit marzipan muffin. Macaroon cake soufflé tootsie roll fruitcake sugar plum sesame snaps. Jelly danish muffin cookie sweet. Lemon drops cake halvah sugar plum tart gummi bears cake liquorice jelly-o. Sweet cheesecake sweet lemon drops pastry macaroon.
+                    </p>
+                       
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close1</button>
+                        <button class="btn btn-primary" type="button" onclick="resumeVideo()">Resume video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Page Title -->
         <div class="d-flex sub-title justify-content-center mb-3 p-5">
             <h1>About</h1>
@@ -50,7 +73,7 @@
 
         <div class="container px-2">
             
-            <video controls>
+            <video id="video1" controls>
                 <source width="400" src="media/office_conv.mp4" type="video/mp4">
             </video>
             
