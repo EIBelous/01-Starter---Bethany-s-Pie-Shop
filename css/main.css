@@ -133,7 +133,9 @@ video {
 
 /* Large devices (large desktops,  and up) */
 @media (min-width: 1200px) {
-
+.modal-xl{
+    max-width: 99%;
+}
 }
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.6);
