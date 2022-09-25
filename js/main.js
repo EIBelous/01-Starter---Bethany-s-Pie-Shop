@@ -133,17 +133,33 @@ $('[data-spy="scroll"]').on('activate.bs.scrollspy' , function (e, obj){
         alert('section2')
     }
 })
-video1.onpause = function(){
-    $('#about1').modal('toggle')
-}
-function resumeVideo(){
-    $('#about1').modal('toggle')
+// video1.onpause = function(){
+//     $('#about1').modal('toggle')
+// }
+// function resumeVideo(){
+//     $('#about1').modal('toggle')
     
-}
-$('.modal').on('shown.bs.modal', function(e){
-video1.pause()
-})
-$('.modal').on('hidden.bs.modal', function(e){
-    video1.play()
-    })
+// }
+// $('.modal').on('shown.bs.modal', function(e){
+// video1.pause()
+// })
+// $('.modal').on('hidden.bs.modal', function(e){
+//     video1.play()
+//     })
 
+$('.modal').on('show.bs.modal', function(e){
+    let button=$(e.relatedTarget);
+
+    let modal=$(this);
+
+    let titleText= button.data('title');
+    let imagePath= button.data('image');
+    let mainText = button.data('text');
+
+    modal.find('.modal-title').text(titleText);
+    modal.find('img').attr('src', imagePath);
+    modal.find('p').text(mainText);
+
+
+
+    })

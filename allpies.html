@@ -47,9 +47,40 @@
             <h3 class="title">All Kinds O Pies</h3>
         </div>
 
-        <div class="d-flex flex-column">
+        <!-- <div class="d-flex flex-column">
             <button id ="popButton" type="button" class="btn btn-secondary my-3 px-3" onclick="viewPopOvers()">View popovers</button>
+        </div> -->
+        <div class="modal fade" tabindex="-1" id="pieInfo">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title1</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-3">
+                               <img src="images/bethanysmall.jpg" class="img-fluid w-100">     
+                            </div>
+                            <div class="col-9">
+                                <p>1Marshmallow dragée marshmallow powder chocolate cake cupcake sugar plum fruitcake tootsie roll. Chocolate bar tiramisu lemon drops dessert macaroon cupcake pie gummies. Jelly-o lollipop sugar plum oat cake shortbread bear claw muffin dessert danish. Apple pie candy biscuit marzipan muffin. Macaroon cake soufflé tootsie roll fruitcake sugar plum sesame snaps. Jelly danish muffin cookie sweet. Lemon drops cake halvah sugar plum tart gummi bears cake liquorice jelly-o. Sweet cheesecake sweet lemon drops pastry macaroon.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" type="button" >Save</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <div class="d-flex flex-column my-3 px-5">
             
@@ -62,40 +93,12 @@
                 <div class="d-flex flex-column align-items-center">
                     <h4><span class="badge badge-success p-2">$12.95</span></h4>
                     <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal" 
-                    data-toggle="modal" data-target="#pie1">Learn More</button>
+                    data-toggle="modal" data-target="#pieInfo" data-title="All about chisecakes" data-image="images/products/applepiesmall.jpg" 
+                    data-text="arSSSSSSSSSSSSSSSSSSSSse cupcake sugar plum fruitcake tootsie roll. Chocolate bar tiramisu lemon drops dessert macaroon cupcake pie gummies. Jelly-o lollipop sugar plum oat cake shortbread bear claw muffin dessert danish. Apple pie candy biscuit marzipan muffin. Macaroon cake soufflé tootsie roll fruitcake sugar plum sesame snaps. Jelly danish muffin cookie sweet. Lemon drops cake halvah sugar plum tart gummi bears"
+                    >Learn More</button>
                 </div>
             </div>
-            <div class="modal" tabindex="-1" id="pie1">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <h5 class="modal-titile">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal">
-                                <span>&times;</span>
-                            </button>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-3">
-                                   <img src="images/bethanysmall.jpg" class="img-fluid w-100">     
-                                </div>
-                                <div class="col-9">
-                                    Marshmallow dragée marshmallow powder chocolate cake cupcake sugar plum fruitcake tootsie roll. Chocolate bar tiramisu lemon drops dessert macaroon cupcake pie gummies. Jelly-o lollipop sugar plum oat cake shortbread bear claw muffin dessert danish. Apple pie candy biscuit marzipan muffin. Macaroon cake soufflé tootsie roll fruitcake sugar plum sesame snaps. Jelly danish muffin cookie sweet. Lemon drops cake halvah sugar plum tart gummi bears cake liquorice jelly-o. Sweet cheesecake sweet lemon drops pastry macaroon.
-
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-                            <button class="btn btn-primary" type="button" >Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+           
             <div class="d-flex flex-row align-items-center py-3 border-bottom">
                 <img src="images/products/applepiesmall.jpg" class="img-fluid thumb shadow">
                 <div class="d-flex flex-column ml-3 mr-auto">
