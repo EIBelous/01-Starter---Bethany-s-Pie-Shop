@@ -138,5 +138,12 @@ video1.onpause = function(){
 }
 function resumeVideo(){
     $('#about1').modal('toggle')
-    video1.play()
+    
 }
+$('.modal').on('shown.bs.modal', function(e){
+video1.pause()
+})
+$('.modal').on('hidden.bs.modal', function(e){
+    video1.play()
+    })
+
